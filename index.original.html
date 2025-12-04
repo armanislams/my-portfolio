@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Sinan Tokmak - Developer Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1A1A1A",
+              "background-light": "#f7f7f7",
+              "background-dark": "#191919",
+            },
+            fontFamily: { display: "Inter" },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Roboto Mono", monospace;
+      }
+
+      .icon-sm {
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-300"
+  >
+    <div class="flex h-screen">
+      <aside
+        class="flex flex-col items-center justify-start py-8 px-4 border-r border-gray-200 dark:border-gray-700"
+      >
+        <nav class="flex flex-col items-center space-y-6">
+          <a
+            class="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white"
+            href="#"
+          >
+            <span class="material-icons-outlined icon-sm">qr_code_2</span>
+          </a>
+          <a
+            class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons-outlined icon-sm">person_outline</span>
+          </a>
+          <a
+            class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons-outlined icon-sm">code</span>
+          </a>
+          <a
+            class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons-outlined icon-sm"
+              >chat_bubble_outline</span
+            >
+          </a>
+          <a
+            class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons-outlined icon-sm">edit_note</span>
+          </a>
+          <a
+            class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
+            href="#"
+          >
+            <span class="material-icons-outlined icon-sm">mail_outline</span>
+          </a>
+        </nav>
+      </aside>
+      <main class="flex-1 flex flex-col p-8">
+        <header class="flex justify-between items-center mb-16">
+          <div class="text-xl font-bold text-gray-900 dark:text-white">
+            <span class="text-primary">&lt;C/&gt;</span> SinanTokmak
+          </div>
+          <nav class="flex items-center space-x-6">
+            <a
+              class="text-primary font-medium hover:opacity-80 transition-opacity"
+              href="#"
+              >Home</a
+            >
+            <a class="hover:text-primary transition-colors" href="#">Blogs</a>
+            <div class="relative">
+              <input
+                class="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg py-1.5 pl-4 pr-10 w-48 focus:ring-primary focus:border-primary text-sm"
+                type="text"
+              />
+              <span
+                class="material-icons-outlined absolute right-3 top-1/2 -translate-y-1/2 text-gray-400"
+                >search</span
+              >
+            </div>
+            <div class="flex items-center space-x-4 text-sm">
+              <a
+                class="flex items-center space-x-1 hover:text-primary transition-colors"
+                href="#"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="h-4 w-4"
+                  fill="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M12.315 2c-4.42 0-8 3.58-8 8a8.003 8.003 0 005.152 7.514.5.5 0 00.685-.487V15.5a.5.5 0 01.5-.5h2a.5.5 0 01.5.5v2.027a.5.5 0 00.685.487A8.003 8.003 0 0020.315 10c0-4.42-3.58-8-8-8zM6 10a6 6 0 1112 0 6 6 0 01-12 0z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Instagram</span>
+              </a>
+              <a
+                class="flex items-center space-x-1 hover:text-primary transition-colors"
+                href="#"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="h-4 w-4"
+                  fill="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M11.944 0a12 12 0 00-9.849 18.571 8.653 8.653 0 01-1.724-4.512c0-4.816 3.896-8.711 8.711-8.711s8.711 3.896 8.711 8.711c0 2.222-.843 4.246-2.24 5.812a.602.602 0 01-.853 0 .602.602 0 010-.853 6.31 6.31 0 001.693-4.96c0-3.534-2.865-6.4-6.4-6.4s-6.4 2.865-6.4 6.4a6.4 6.4 0 004.96 6.205.602.602 0 01.571.517.602.602 0 01-.367.643A11.973 11.973 0 0011.944 24a12 12 0 000-24zM8.33 11.1c.908 0 1.644.736 1.644 1.644s-.736 1.644-1.644 1.644-1.644-.736-1.644-1.644.736-1.644 1.644-1.644zm7.284 0c.908 0 1.644.736 1.644 1.644s-.736 1.644-1.644 1.644-1.644-.736-1.644-1.644.736-1.644 1.644-1.644z"
+                  ></path>
+                </svg>
+                <span>Discord</span>
+              </a>
+              <a
+                class="flex items-center space-x-1 hover:text-primary transition-colors"
+                href="#"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="h-4 w-4"
+                  fill="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+                <span>Github</span>
+              </a>
+            </div>
+          </nav>
+        </header>
+        <div class="flex-1 grid grid-cols-12 gap-8 items-center">
+          <div class="col-span-12">
+            <h1
+              class="text-8xl font-bold text-gray-400 dark:text-gray-500 relative"
+            >
+              Developer
+              <span
+                class="absolute top-0 left-0 text-primary opacity-20"
+                style="text-shadow: 0 0 15px currentColor"
+                >Developer</span
+              >
+            </h1>
+          </div>
+          <div class="col-span-4 self-start">
+            <div
+              class="bg-white dark:bg-gray-800/50 p-6 rounded-3xl border-2 border-transparent relative"
+              style="
+                border-image: linear-gradient(to bottom, #23f4d3, transparent) 1;
+              "
+            >
+              <div class="text-center">
+                <img
+                  alt="Profile picture of Sinan"
+                  class="w-24 h-24 rounded-full mx-auto border-4 border-primary shadow-lg shadow-primary/20"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT-I8g0MlatbF5dIbVTlqkAq75UHXJV-0YJ5pZ7O2ZgBzs2TftJComYt5ije_Yii39_CmWLjgIXGXL5JdWPBvUVL76_dwPJBWo7klG3ZoL7JtNhUzoBZFWlY7ES6sf2MJD15Lqxu0FWK4aOXHkxVO3HlOxqJup7cWnNVkOBHFDBIk6zSxZbHmLL9JJ_p0dpS2bqsS1KjmVc-nKCThx1Cu0LkQhACElkLtBOPzb-gULEO8hHC9FGtm-Q4hLaK2nIiclX669Zf4oOUs"
+                />
+                <h2
+                  class="text-2xl font-bold mt-4 text-gray-900 dark:text-white"
+                >
+                  Sinan
+                </h2>
+                <p class="text-gray-500 dark:text-gray-400">
+                  full-stack developer
+                </p>
+              </div>
+              <div class="mt-6 space-y-3 text-sm">
+                <div class="flex items-center">
+                  <span
+                    class="material-icons-outlined text-primary text-lg mr-3"
+                    >mail_outline</span
+                  >
+                  <span>abdulkadirsinan_tokmak@gmail.com</span>
+                </div>
+                <div class="flex items-center">
+                  <span
+                    class="material-icons-outlined text-primary text-lg mr-3"
+                    >location_on</span
+                  >
+                  <span>Turkey</span>
+                </div>
+                <div class="flex items-center">
+                  <span
+                    class="material-icons-outlined text-primary text-lg mr-3"
+                    >work_outline</span
+                  >
+                  <span>Full-Time / Freelancer</span>
+                </div>
+                <div class="flex items-center">
+                  <span
+                    class="material-icons-outlined text-primary text-lg mr-3"
+                    >link</span
+                  >
+                  <span>www.sinantokmak.com</span>
+                </div>
+              </div>
+              <div class="mt-6 flex justify-center space-x-2">
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs font-semibold px-3 py-1 rounded-full"
+                  >HTML</span
+                >
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs font-semibold px-3 py-1 rounded-full"
+                  >CSS</span
+                >
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs font-semibold px-3 py-1 rounded-full"
+                  >JS</span
+                >
+                <span
+                  class="bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs font-semibold px-3 py-1 rounded-full"
+                  >REACT</span
+                >
+              </div>
+              <div class="mt-8">
+                <button
+                  class="w-full bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 py-3 px-6 rounded-lg border border-gray-300 dark:border-gray-600 flex items-center justify-center space-x-2 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                >
+                  <span>Download CV</span>
+                  <span class="material-icons-outlined">download</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-8 flex flex-col justify-between h-full pl-12">
+            <div>
+              <p class="text-gray-400 dark:text-gray-500 text-sm">&lt;h1&gt;</p>
+              <h2 class="text-5xl font-bold my-4 text-gray-900 dark:text-white">
+                Hey<br />
+                I'm <span class="text-primary">Sinan</span>,<br />
+                Full-Stack Developer
+              </h2>
+              <p class="text-gray-400 dark:text-gray-500 text-sm">
+                &lt;/h1&gt;
+              </p>
+              <p class="text-gray-400 dark:text-gray-500 text-sm mt-8">
+                &lt;p&gt;
+              </p>
+              <p class="my-2 text-gray-600 dark:text-gray-400 max-w-md">
+                I help business grow by crafting amazing web experiences. If
+                you're looking for a developer that likes to get stuff done.
+              </p>
+              <p class="text-gray-400 dark:text-gray-500 text-sm">&lt;/p&gt;</p>
+              <a
+                class="inline-flex items-center text-primary font-semibold mt-8 text-lg hover:opacity-80 transition-opacity"
+                href="#"
+              >
+                Let's Talk
+                <span class="material-icons-outlined ml-2">east</span>
+              </a>
+            </div>
+            <div class="self-end">
+              <div
+                class="bg-white dark:bg-gray-800/50 p-6 rounded-3xl space-y-6"
+              >
+                <div class="flex items-center">
+                  <span class="text-3xl font-bold text-primary mr-4">4</span>
+                  <div class="text-sm">
+                    <p class="text-gray-900 dark:text-white">Programming</p>
+                    <p class="text-gray-500 dark:text-gray-400">Language</p>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <span class="text-3xl font-bold text-primary mr-4">6</span>
+                  <div class="text-sm">
+                    <p class="text-gray-900 dark:text-white">Development</p>
+                    <p class="text-gray-500 dark:text-gray-400">Tools</p>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <span class="text-3xl font-bold text-primary mr-4">8</span>
+                  <div class="text-sm">
+                    <p class="text-gray-900 dark:text-white">Years of</p>
+                    <p class="text-gray-500 dark:text-gray-400">Experience</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+  <section class="font-display bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-300 antialiased">
+<div class="relative min-h-screen w-full flex items-center justify-center p-4 sm:p-6 lg:p-8 overflow-hidden">
+<div class="absolute inset-0 topographic-bg z-0 hidden dark:block"></div>
+<div class="absolute inset-0 bg-background-light dark:hidden z-0"></div>
+<main class="relative z-10 w-full max-w-6xl mx-auto">
+<div class="absolute top-1/2 left-0 -translate-y-1/2 -ml-24 hidden lg:flex flex-col items-center space-y-4">
+<div class="w-px h-24 bg-gray-400 dark:bg-gray-600"></div>
+<div class="w-4 h-4 rounded-full border-2 border-primary bg-background-dark"></div>
+<div class="w-px h-24 bg-gray-400 dark:bg-gray-600"></div>
+</div>
+<div class="absolute top-8 right-1/2 translate-x-1/2 lg:right-1/4 lg:-translate-x-1/2 flex flex-col items-center space-y-2">
+<div class="text-3xl font-bold text-primary">0</div>
+<div class="w-px h-8 bg-gray-300 dark:bg-gray-700 relative">
+<div class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 h-2 w-2 rounded-full bg-white dark:bg-gray-400"></div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center pt-24 lg:pt-0">
+<div class="flex flex-col space-y-8">
+<div class="inline-flex items-center justify-center lg:justify-start">
+<div class="relative inline-block">
+<h1 class="relative z-10 text-3xl sm:text-4xl font-bold bg-gray-700 dark:bg-gray-800 text-gray-100 py-3 px-8 rounded-full">About Me</h1>
+<div class="absolute inset-0 border-2 border-primary rounded-full transform -rotate-2"></div>
+</div>
+</div>
+<div class="bg-gray-200/50 dark:bg-gray-800/50 backdrop-blur-sm p-6 sm:p-8 rounded-lg text-sm sm:text-base leading-relaxed text-gray-600 dark:text-gray-400">
+<p class="text-primary">&lt;p&gt;</p>
+<div class="pl-4 sm:pl-6">
+<h2 class="text-xl font-bold text-primary mb-4">Hello!</h2>
+<p class="mb-4">
+                My name is Ethan and I specialize in web development that utilizes <span class="text-primary font-semibold">HTML</span>, <span class="text-primary font-semibold">CSS</span>, <span class="text-primary font-semibold">JS</span>, and <span class="text-primary font-semibold">React</span>.
+              </p>
+<p class="mb-4">
+                I am a highly motivated individual and student optimist dedicated to writing clean, concise, robust code that works. Striving to never stop learning and improving.
+              </p>
+<p class="mb-4">
+                When I'm not coding, I am <span class="text-primary font-semibold">writing blogs</span>, reading, or picking up some new hands-on IoT project like <span class="text-primary font-semibold">photograph</span>.
+              </p>
+<p>
+                I like to have my perspective and beliefs on systems challenged so that I see the world through new eyes.
+              </p>
+</div>
+<p class="text-primary mt-4">&lt;/p&gt;</p>
+</div>
+</div>
+<div class="flex justify-center items-center">
+<div class="p-2 bg-white/20 dark:bg-white/10 rounded-lg backdrop-blur-sm shadow-2xl">
+<img alt="A developer coding on a laptop with a plant and a mug on the desk" class="rounded-md w-full max-w-md object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkHaR3BJ6rSrW0wO_9tnkywq8-acTYXKVcWqSnTSqZzhF73GafAkrQnIh1mpXfIQi-mOwtDsKayuuD0GEfSyXM1lg6ulWVvb4ikB2AOUwvBeZ5BOHB0GAkYDnFSvb92yLdRhN-McFFOUxu3kpcMUYceqRK74BNExskewaEukqrw1POu8cgGLEvP0o_M8CHRkeKJ2jUpRrtsaWSUApNoBNjZmh0SmwphFV2kWyMdz80xy4Q4kXPqZPZtoaOEr662j3pU2ON107QdaE"/>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</section>
+<section class="bg-background-light dark:bg-background-dark font-display text-center antialiased">
+<div class="relative min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8">
+<div class="absolute inset-0 z-0 opacity-5 dark:opacity-10" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCE8h_CuXsJtQbH5jRHNc4Y0IGXVuXj3VlNeNnluFljx8PTU00umjFKsF2QPnDZJlHJTmSiuZia6sDq5wwPQBmPdfm06uB6Beqt-bte9JlHuamkYScjmV6zreQxmtL1WdMc3ipLQfG4OckhJC3TDNFI9c2XmQcz_pKcm7utx9qPz9DCPVUb41jbJvpCLz15u95i5Qmgf8glkOpSgblf8_U4wHPmLKOt_VxvWlQ1C_xGj4CrJw6UiGTkHTi950Ch9I8YcKVB_VxVJ9U'); background-size: cover; background-position: center;"></div>
+<div class="relative z-10 w-full max-w-4xl mx-auto">
+<div class="mb-10 relative h-16 bracket-container">
+</div>
+<span class="material-icons text-primary" style="font-size: 80px;">code</span>
+<h1 class="text-4xl sm:text-5xl font-bold text-primary mt-4 mb-3">Skills</h1>
+<p class="text-slate-600 dark:text-slate-400 mb-12 text-sm sm:text-base">I am striving to never stop learning and improving</p>
+<div class="flex flex-col sm:flex-row justify-center gap-6 mb-16">
+<div class="bg-primary/20 dark:bg-primary/10 border border-primary/50 rounded-lg p-6 flex-1 max-w-sm mx-auto sm:max-w-none">
+<div class="flex items-center justify-center gap-4 mb-2">
+<span class="material-icons text-primary text-3xl">desktop_windows</span>
+<h2 class="text-xl font-semibold text-slate-800 dark:text-slate-200">Web Development</h2>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400">HTML, CSS, JS, REACT</p>
+</div>
+<div class="bg-primary/20 dark:bg-primary/10 border border-primary/50 rounded-lg p-6 flex-1 max-w-sm mx-auto sm:max-w-none">
+<div class="flex items-center justify-center gap-4 mb-2">
+<span class="material-icons text-primary text-3xl">phone_iphone</span>
+<h2 class="text-xl font-semibold text-slate-800 dark:text-slate-200">App Development</h2>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400">IOS, Android</p>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-8">
+<div class="flex flex-col items-center gap-3">
+<div class="w-24 h-24 rounded-full flex items-center justify-center" style="background-color: #e44d26;">
+<img alt="HTML5 logo" class="w-16 h-16" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfwxo8uUJUyzv6YHZ2f70ewY7AdNAHMa6NSDl80hvbAQukHkY2VzXbjz4prloIJ6xbLGc2y9lRfsn5uJGcUKfSAbSI-6ACQNBuh9L2dvQnBUMzgCExZXddrgzQglsVayfNiMXh0GxLV7oRTnh4wUKeaZmRO1vMTBq0eOSgN2YqCR1QmWH4PzOVXjIQPwBpLsdV8P8zHKpTpd6QfQ9IFZoHucpEMnDZUx0ysuuEnBg_VlmWNUVB6YWaOocPp5uXdnzBAj0fnSii2E0"/>
+</div>
+<p class="font-semibold text-slate-700 dark:text-slate-300">HTML</p>
+</div>
+<div class="flex flex-col items-center gap-3">
+<div class="w-24 h-24 rounded-full flex items-center justify-center" style="background-color: #264de4;">
+<img alt="CSS3 logo" class="w-16 h-16" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7DG8pB6C4zeUQEr6WSwjzysdWuvb_-cIhnvCdA8JMMAIkIhSyjFnmX4ONy5uuQtYK0vtVxU9YcQsrZWgJxb9G5XQKFsTDMeBow28LtmUzFl3gFNmTqkYDFoSsBChCuSuEl_b9H_k3fkgpLfuHS7Hr2cgiI3tBaHP5vx0tt5459ghSqnZmJgEJzMDj7d4rgoKISLVPtVTrJmwwp25lIIZcV6ufuhXpSIhdH_Ej8lwVnka9q115NX-0Ml4l-aDyrQw9wAJPBW6vVt0"/>
+</div>
+<p class="font-semibold text-slate-700 dark:text-slate-300">CSS</p>
+</div>
+<div class="flex flex-col items-center gap-3">
+<div class="w-24 h-24 rounded-full flex items-center justify-center" style="background-color: #f0db4f;">
+<img alt="JavaScript logo" class="w-16 h-16" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkA65lIpBfS5UfJ1JYxLi-kHMVdyeOaM7dH2nmVYINrfD5ZDTovxFfxVcoo96YCo7uYMS8xmZvxux1oIkyNg7eKJdPXGhzLEoft3ZVGO-WbSb1OM5xn0o8fQi91mfvVArnb0uvzmTepRr-YHfQ8TIVjyzldEz7eA4eDgvbuBJa1nY6Kdyfsaa2YAN0f5F-hE-AvuKSQAOv0gc2-MpAosGQoz_p35jrr0wqqQaN49Y1Z0NGULYJkTdZc0i6uWAjVoucm_JxL0RZ6Gk"/>
+</div>
+<p class="font-semibold text-slate-700 dark:text-slate-300">JS</p>
+</div>
+<div class="flex flex-col items-center gap-3">
+<div class="w-24 h-24 rounded-full flex items-center justify-center" style="background-color: #61dafb;">
+<img alt="React logo" class="w-16 h-16" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjPjT8ZW3JjG7-aq3e-s2y6L7E9UfgpjpAizxdD-iGBf2wVEbfqU7HEmAv92c4Yio--jVtNqDmoujWLW2loYtTYEEecQ6DxEp4nuHmsWpmsTPlQCpRzrnNHTVtJuyuhEyW9H1aRULBnjn1yCJWHz7dMfUI4AK2eQqolnQGPd405aMYVwL5HaymjG3FgxsWRK9m3xZt3t9T2SII4zxXxWuWk6_KkeJ9A4LT77asxZIXBSjyTqeP98bihXMFnKcQxZAw6XDfLKOnudQ"/>
+</div>
+<p class="font-semibold text-slate-700 dark:text-slate-300">REACT</p>
+</div>
+</div>
+</div>
+</div>
+
+</section>
+<section class="bg-background-light dark:bg-background-dark font-display text-gray-500 dark:text-gray-400 bg-pattern">
+<div class="flex flex-col items-center justify-center min-h-screen p-8">
+<div class="flex flex-col items-center space-y-4">
+<div class="relative flex flex-col items-center">
+<div class="h-16 border-l border-dashed border-gray-400 dark:border-gray-600"></div>
+<div class="w-2 h-2 bg-gray-400 dark:bg-gray-600 rounded-full my-2"></div>
+<div class="text-primary font-bold text-4xl border-2 border-primary rounded-full w-16 h-16 flex items-center justify-center">
+          01
+        </div>
+</div>
+<h1 class="text-6xl font-bold text-primary mt-8">Works</h1>
+<div class="flex items-center space-x-4 my-4">
+<div class="w-10 h-1 bg-primary rounded-full"></div>
+<p class="text-lg text-gray-600 dark:text-gray-300">I had the pleasure of working with these awesome projects</p>
+<div class="w-10 h-1 bg-primary rounded-full"></div>
+</div>
+</div>
+<div class="w-full max-w-6xl mx-auto mt-16 flex items-center justify-center space-x-4">
+<button class="p-3 rounded-full bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-white hover:bg-gray-400 dark:hover:bg-gray-600 transition-colors">
+<span class="material-icons">chevron_left</span>
+</button>
+<div class="flex-grow flex items-end justify-center gap-8 px-4">
+<img alt="A dark-themed code editor on a computer monitor" class="w-auto h-72 object-contain hidden lg:block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqABVCpozT0b8RcDTTTiI5WWedmeXmNZFPe_aRRvJlQLq6u4_Xbym0llJEe7ac3DqwyPkpD9mf2CqKb0WautO-fKd-FjF2BIDY7WmXgPMV3LIYKvvg8DheSydhvY5TOtG__RJ7w8fzOSdJ7CZLPTsWmY7gwFQPUYQ-KP7aLyHUMUaNHtPfEmoIptZt5EJpUNZW7XJjFF4powfsRFiNHx1yP3cN931oINHPPTBu_1yaHkOlVpxMgUHS5xsOMka-JIN1zwjaC8D5L_s"/>
+<div class="flex flex-col items-center">
+<a class="inline-flex items-center text-primary font-semibold text-lg mb-4 group" href="#">
+            View Website
+            <span class="material-icons ml-1 transform transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+<img alt="A light-themed website design on a desktop computer screen" class="w-auto h-64 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYNC5p2otrLIUNMSa0XM9-u3lvlfU73QoHxpAspEhlHJI7-qEDJJ50ZClEv8WjHlbfSRjHStgBtPLkNAcenI2Gxwak3Nom97w4vC0lEE2drZSVOjmh6nDlEXULOFNnxzphLtfN2FW8BF2zJPK6yvgmeTo2DL23HTjlvq642_YQpF1XbvnSSa4eiH8bQhc0ptopB_IcTZyPTTXXV1yW_VpbNTKlLwcifauc2lIZk7YZQ0-JgrdEyTe4VVd6nAMMW8zpPwcq9cWqphA"/>
+</div>
+</div>
+<button class="p-3 rounded-full bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-white hover:bg-gray-400 dark:hover:bg-gray-600 transition-colors">
+<span class="material-icons">chevron_right</span>
+</button>
+</div>
+</div>
+
+</section>
+<section class="bg-background-light dark:bg-background-dark font-display text-gray-500 dark:text-gray-400">
+<div class="flex flex-col min-h-screen">
+<main class="flex-grow flex flex-col items-center justify-center px-4 py-16">
+<div class="w-full max-w-4xl text-center">
+<div class="flex flex-col items-center mb-8">
+<svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+<div class="border-l-2 border-dotted border-gray-600 dark:border-gray-500 h-12 w-0 my-2"></div>
+<div class="w-2 h-2 bg-gray-600 dark:bg-gray-500 rounded-full"></div>
+</div>
+<h1 class="text-5xl md:text-6xl font-bold text-gray-800 dark:text-white">Contact</h1>
+<div class="relative inline-block mt-4 mb-8">
+<p class="text-lg text-gray-600 dark:text-gray-300">I'm currently available for freelance work</p>
+<div class="absolute bottom-[-8px] left-1/4 w-1/2 h-0.5 bg-primary"></div>
+</div>
+<a class="inline-block border-2 border-primary text-primary font-bold py-3 px-8 rounded-full text-lg tracking-wider hover:bg-primary hover:text-background-dark transition-all duration-300 mb-20" href="#contact-form">
+                    Send Me A Message
+                </a>
+<form class="space-y-12 max-w-2xl mx-auto text-left" id="contact-form">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="relative">
+<label class="block text-sm font-medium text-primary mb-2" for="name">Your name *</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-gray-400 dark:border-gray-600 focus:ring-0 focus:border-primary text-gray-700 dark:text-gray-300 placeholder-gray-500 dark:placeholder-gray-500 transition-colors" id="name" name="name" placeholder="Enter your name" type="text"/>
+</div>
+<div class="relative">
+<label class="block text-sm font-medium text-primary mb-2" for="email">Your email *</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-gray-400 dark:border-gray-600 focus:ring-0 focus:border-primary text-gray-700 dark:text-gray-300 placeholder-gray-500 dark:placeholder-gray-500 transition-colors" id="email" name="email" placeholder="Enter your email" type="email"/>
+</div>
+</div>
+<div class="relative">
+<label class="block text-sm font-medium text-primary mb-2" for="message">Your message *</label>
+<input class="w-full bg-transparent border-0 border-b-2 border-gray-400 dark:border-gray-600 focus:ring-0 focus:border-primary text-gray-700 dark:text-gray-300 placeholder-gray-500 dark:placeholder-gray-500 transition-colors" id="message" name="message" placeholder="Enter your needs" type="text"/>
+</div>
+<div class="text-center pt-8">
+<button class="inline-flex items-center gap-2 bg-primary text-background-dark font-bold py-3 px-8 rounded-full text-lg tracking-wider hover:opacity-90 transition-opacity duration-300 shadow-lg shadow-primary/20" type="submit">
+                            Send Message
+                            <span class="material-icons text-xl">send</span>
+</button>
+</div>
+</form>
+</div>
+</main>
+<footer class="w-full border-t border-gray-300 dark:border-gray-700 mt-20">
+<div class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center text-sm">
+<p class="mb-4 md:mb-0">© 2023 SinanTokmak, All rights reserved.</p>
+<div class="flex items-center gap-6 mb-4 md:mb-0">
+<a class="hover:text-gray-900 dark:hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-gray-900 dark:hover:text-white transition-colors" href="#">Terms &amp; Conditions</a>
+</div>
+<div class="flex items-center gap-2">
+<a class="social-icon p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-primary hover:bg-primary transition-all duration-300" href="#">
+<svg alt="Instagram Icon" class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163zm0 1.802c-3.116 0-3.483.01-4.71.066-2.585.118-3.806 1.34-3.924 3.924-.056 1.226-.066 1.593-.066 4.71s.01 3.484.066 4.71c.118 2.583 1.339 3.806 3.924 3.924 1.226.056 1.594.066 4.71.066s3.484-.01 4.71-.066c2.585-.118 3.806-1.34 3.924-3.924.056-1.226.066-1.593.066-4.71s-.01-3.484-.066-4.71c-.118-2.583-1.339-3.806-3.924-3.924-1.226-.056-1.594-.066-4.71-.066zM12 8.25a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5zm0 1.8a1.95 1.95 0 110 3.9 1.95 1.95 0 010-3.9zm4.61-4.14a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"></path></svg>
+</a>
+<a class="social-icon p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-primary hover:bg-primary transition-all duration-300" href="#">
+<svg alt="Discord Icon" class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.222 5.584C18.688 4.95 17.062 4.562 15.375 4.5c-.062.333-.125.667-.188 1a12.87 12.87 0 00-4.375 0c-.063-.333-.125-.667-.188-1C8.938 4.563 7.312 4.95 5.778 5.584A20.25 20.25 0 004.5 13.594c1.625 1.219 3.25 2.156 4.781 2.812.5-.344.938-.719 1.344-1.125a10.45 10.45 0 01-1.875-1.125c.22-.15.43-.3.625-.438a13.393 13.393 0 0010.25 0c.2.14.408.288.625.438-.656.406-1.281.812-1.875 1.125.406.406.844.781 1.344 1.125 1.531-.656 3.156-1.594 4.781-2.812.016-2.126-.64-6.438-1.278-8.01zM9.75 13.688c-.844 0-1.531-.719-1.531-1.594s.687-1.594 1.531-1.594c.844 0 1.531.719 1.531 1.594s-.687 1.594-1.531 1.594zm4.5 0c-.844 0-1.531-.719-1.531-1.594s.687-1.594 1.531-1.594c.844 0 1.531.719 1.531 1.594s-.687 1.594-1.531 1.594z"></path></svg>
+</a>
+<a class="social-icon p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-primary hover:bg-primary transition-all duration-300" href="#">
+<svg alt="Github Icon" class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.475 2 2 6.475 2 12a9.994 9.994 0 007.075 9.675c.5.087.687-.212.687-.475 0-.237-.013-1.025-.013-1.85-2.85.612-3.45-1.225-3.45-1.225-.45-1.15-1.1-1.45-1.1-1.45-.9-.612.075-.6.075-.6 1 .075 1.525 1.025 1.525 1.025.887 1.525 2.325 1.087 2.9.825.088-.65.35-1.087.637-1.337-2.225-.25-4.55-1.112-4.55-4.95 0-1.087.387-1.987 1.025-2.687-.1-.25-.45-1.275.1-2.65 0 0 .837-.262 2.75 1.025A9.625 9.625 0 0112 6.8c.85 0 1.7.112 2.5.337 1.912-1.3 2.75-1.025 2.75-1.025.55 1.375.2 2.4.1 2.65.637.7 1.025 1.6 1.025 2.687 0 3.85-2.338 4.688-4.563 4.938.362.312.675.925.675 1.862 0 1.35-.012 2.438-.012 2.775 0 .262.188.575.688.475A9.994 9.994 0 0022 12c0-5.525-4.475-10-10-10z"></path></svg>
+</a>
+</div>
+<p class="hidden md:block">Design By <span class="text-gray-900 dark:text-white font-semibold">JohannLeon</span></p>
+</div>
+</footer>
+</div>
+
+</section>
+</html>
