@@ -2,6 +2,7 @@ import React from 'react';
 import { MdCode, MdDesktopWindows, MdPhoneIphone } from 'react-icons/md';
 import { motion } from 'framer-motion';
 import bgImg from '../assets/bgImg.jpg'
+import { FaServer } from 'react-icons/fa';
 
 const Skills = () => {
     const skills = [
@@ -78,9 +79,9 @@ const Skills = () => {
                         >
                             <div className="flex items-center justify-center gap-4 mb-2">
                                 <MdDesktopWindows className="text-primary text-3xl" />
-                                <h2 className="text-xl font-semibold text-slate-800 dark:text-slate-200">Web Development</h2>
+                                <h2 className="text-xl font-semibold text-slate-800 dark:text-slate-200">Frontend Development</h2>
                             </div>
-                            <p className="text-sm text-slate-600 dark:text-slate-400">HTML, CSS, JS, REACT</p>
+                            <p className="text-sm text-slate-600 dark:text-slate-400">HTML, CSS, JS, REACT JS, NEXT JS</p>
                         </motion.div>
 
                         <motion.div
@@ -88,10 +89,10 @@ const Skills = () => {
                             className="bg-primary/20 dark:bg-primary/10 border border-primary/50 rounded-lg p-6 flex-1 max-w-sm mx-auto sm:max-w-none backdrop-blur-sm"
                         >
                             <div className="flex items-center justify-center gap-4 mb-2">
-                                <MdPhoneIphone className="text-primary text-3xl" />
-                                <h2 className="text-xl font-semibold text-slate-800 dark:text-slate-200">App Development</h2>
+                                <FaServer className="text-primary text-3xl" />
+                                <h2 className="text-xl font-semibold text-slate-800 dark:text-slate-200">Backend Development</h2>
                             </div>
-                            <p className="text-sm text-slate-600 dark:text-slate-400">IOS, Android</p>
+                            <p className="text-sm text-slate-600 dark:text-slate-400">EXPRESS JS, NODE JS, MONGODB, FIREBASE, REST API, JWT</p>
                         </motion.div>
                     </div>
 
