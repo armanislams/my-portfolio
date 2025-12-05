@@ -9,8 +9,8 @@ const Footer = () => {
             © {new Date().getFullYear()}, All rights reserved.
           </p>
 
-          <p className="hidden md:block ml-4">
-            Design By{" "}
+          <p className="ml-4">
+            Designed By{" "}
             <span className="text-gray-900 dark:text-white font-semibold">
               Arman
             </span>
