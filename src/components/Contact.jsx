@@ -4,48 +4,48 @@ import { motion } from 'framer-motion';
 
 const Contact = () => {
     const socialLinks = [
-        {
-            name: 'Email',
-            icon: FaEnvelope,
-            href: 'mailto:armanislam988@gmail.com',
-            color: '#EA4335',
-            label: 'armanislam988@gmail.com'
-        },
-        {
-            name: 'GitHub',
-            icon: FaGithub,
-            href: 'https://github.com/armanislams',
-            color: '#ffffff',
-            label: '@armanislams'
-        },
-        {
-            name: 'LinkedIn',
-            icon: FaLinkedinIn,
-            href: 'https://www.linkedin.com/in/mdarman-islam/',
-            color: '#0A66C2',
-            label: 'Md Arman Islam'
-        },
-        {
-            name: 'Discord',
-            icon: FaDiscord,
-            href: 'https://discord.gg/vQcNXsTDz4',
-            color: '#5865F2',
-            label: 'Join Server'
-        },
-        {
-            name: 'WhatsApp',
-            icon: FaWhatsapp,
-            href: 'https://wa.me/message/K4ZZDXHYDH3EK1',
-            color: '#25D366',
-            label: 'Chat on WhatsApp'
-        },
-        {
-            name: 'WeChat',
-            icon: FaWeixin,
-            href: '#',
-            color: '#09B83E',
-            label: 'Add on WeChat'
-        }
+      {
+        name: "Email",
+        icon: FaEnvelope,
+        href: "mailto:armanislam988@gmail.com",
+        color: "#EA4335",
+        label: "armanislam988@gmail.com",
+      },
+      {
+        name: "GitHub",
+        icon: FaGithub,
+        href: "https://github.com/armanislams",
+        color: "#ffffff",
+        label: "@armanislams",
+      },
+      {
+        name: "LinkedIn",
+        icon: FaLinkedinIn,
+        href: "https://www.linkedin.com/in/mdarman-islam/",
+        color: "#0A66C2",
+        label: "Md Arman Islam",
+      },
+      {
+        name: "Discord",
+        icon: FaDiscord,
+        href: "https://discord.gg/vQcNXsTDz4",
+        color: "#5865F2",
+        label: "Join Server",
+      },
+      {
+        name: "WhatsApp",
+        icon: FaWhatsapp,
+        href: "https://wa.me/message/K4ZZDXHYDH3EK1",
+        color: "#25D366",
+        label: "Chat on WhatsApp",
+      },
+      {
+        name: "WeChat",
+        icon: FaWeixin,
+        href: "https://u.wechat.com/kABS09o6HawQ8P4gquPf13U?s=4",
+        color: "#09B83E",
+        label: "Add on WeChat",
+      },
     ];
 
     return (

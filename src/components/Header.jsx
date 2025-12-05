@@ -41,7 +41,10 @@ const Header = () => {
               <FaInstagram />
               <span className="hidden lg:inline">
                 <button>
-                  <a href="https://instagram.com" target="_blank">
+                  <a
+                    href="https://www.instagram.com/armanislam.shuvo/"
+                    target="_blank"
+                  >
                     Instagram
                   </a>
                 </button>

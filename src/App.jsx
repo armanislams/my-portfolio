@@ -6,6 +6,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Works from './components/Works';
 import Contact from './components/Contact';
+import BuyMeCoffee from './components/BuyMeCoffee';
 import Footer from './components/Footer';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Skills />
         <Works />
         <Contact />
+        <BuyMeCoffee />
         <Footer />
       </main>
     </div>
