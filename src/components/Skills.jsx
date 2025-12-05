@@ -2,44 +2,81 @@ import React from 'react';
 import { MdCode, MdDesktopWindows, MdPhoneIphone } from 'react-icons/md';
 import { motion } from 'framer-motion';
 import bgImg from '../assets/bgImg.jpg'
-import { FaServer } from 'react-icons/fa';
+import { FaServer, FaTools } from 'react-icons/fa';
 
 const Skills = () => {
     const skills = [
+        {
+            name: "HTML",
+            img: "https://images.icon-icons.com/171/PNG/512/html5_23329.png",
+        },
+        {
+            name: "CSS",
+            img: "https://images.icon-icons.com/2415/PNG/512/css_plain_logo_icon_146573.png",
+        },
+        {
+            name: "JS",
+            img: "https://images.icon-icons.com/2107/PNG/512/file_type_js_official_icon_130509.png",
+        },
+        {
+            name: "REACT JS",
+            img: "https://images.icon-icons.com/2415/PNG/512/react_original_logo_icon_146374.png",
+        },
+        {
+            name: "NODE JS",
+            color: "#fafafa",
+            img: "https://images.icon-icons.com/2415/PNG/512/nodejs_original_wordmark_logo_icon_146412.png",
+        },
+        {
+            name: "EXPRESS JS",
+            color: "#fafafa",
+            img: "https://images.icon-icons.com/2699/PNG/512/expressjs_logo_icon_169186.png",
+        },
+        {
+            name: "NEXT JS",
+            color: "#fafafa",
+            img: "https://images.icon-icons.com/2148/PNG/512/nextjs_icon_132160.png",
+        },
+        {
+            name: "MONGODB",
+            img: "https://images.icon-icons.com/2415/PNG/512/mongodb_original_logo_icon_146424.png",
+        },
+    ];
+
+    const tools = [
       {
-        name: "HTML",
-        img: "https://images.icon-icons.com/171/PNG/512/html5_23329.png",
+        name: "Git",
+        img: "https://images.icon-icons.com/2415/PNG/512/git_original_wordmark_logo_icon_146510.png",
       },
       {
-        name: "CSS",
-        img: "https://images.icon-icons.com/2415/PNG/512/css_plain_logo_icon_146573.png",
-      },
-      {
-        name: "JS",
-        img: "https://images.icon-icons.com/2107/PNG/512/file_type_js_official_icon_130509.png",
-      },
-      {
-        name: "REACT JS",
-        img: "https://images.icon-icons.com/2415/PNG/512/react_original_logo_icon_146374.png",
-      },
-      {
-        name: "NODE JS",
+        name: "GitHub",
+        img: "https://images.icon-icons.com/2415/PNG/512/github_original_wordmark_logo_icon_146506.png",
         color: "#fafafa",
-        img: "https://images.icon-icons.com/2415/PNG/512/nodejs_original_wordmark_logo_icon_146412.png",
       },
       {
-        name: "EXPRESS JS",
+        name: "VS Code",
+        img: "https://images.icon-icons.com/2107/PNG/512/file_type_vscode_icon_130084.png",
+      },
+      {
+        name: "Figma",
+        img: "https://images.icon-icons.com/2699/PNG/512/figma_logo_icon_170157.png",
+      },
+      {
+        name: "Postman",
+        img: "https://images.icon-icons.com/3053/PNG/512/postman_macos_bigsur_icon_189815.png",
+      },
+      {
+        name: "Tailwind",
+        img: "https://images.icon-icons.com/2699/PNG/512/tailwindcss_logo_icon_167923.png",
+      },
+      {
+        name: "Firebase",
+        img: "https://images.icon-icons.com/2699/PNG/512/firebase_logo_icon_171157.png",
+      },
+      {
+        name: "Vercel",
+        img: "https://images.icon-icons.com/3375/PNG/512/vercel_brand_icon_211876.png",
         color: "#fafafa",
-        img: "https://images.icon-icons.com/2699/PNG/512/expressjs_logo_icon_169186.png",
-      },
-      {
-        name: "NEXT JS",
-        color: "#fafafa",
-        img: "https://images.icon-icons.com/2148/PNG/512/nextjs_icon_132160.png",
-      },
-      {
-        name: "MONGODB",
-        img: "https://images.icon-icons.com/2415/PNG/512/mongodb_original_logo_icon_146424.png",
       },
     ];
 
@@ -115,6 +152,45 @@ const Skills = () => {
                                 <p className="font-semibold text-slate-700 dark:text-slate-300">{skill.name}</p>
                             </motion.div>
                         ))}
+                    </div>
+
+                    {/* Tools Section */}
+                    <div className="mt-20">
+                        <motion.div
+                            initial={{ scale: 0 }}
+                            whileInView={{ scale: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ type: "spring", stiffness: 260, damping: 20 }}
+                            className="mb-8"
+                        >
+                            <FaTools className="text-primary mx-auto text-5xl" />
+                        </motion.div>
+
+                        <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-3">Tools & Technologies</h2>
+                        <p className="text-slate-600 dark:text-slate-400 mb-12 text-sm sm:text-base">
+                            Tools I use to bring ideas to life
+                        </p>
+
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
+                            {tools.map((tool, index) => (
+                                <motion.div
+                                    key={tool.name}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ delay: index * 0.1 }}
+                                    className="flex flex-col items-center gap-3"
+                                >
+                                    <div
+                                        className="w-24 h-24 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+                                        style={{ backgroundColor: tool.color || '#f3f4f6' }}
+                                    >
+                                        <img alt={`${tool.name} logo`} className="w-16 h-16 object-contain" src={tool.img} />
+                                    </div>
+                                    <p className="font-semibold text-slate-700 dark:text-slate-300">{tool.name}</p>
+                                </motion.div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>

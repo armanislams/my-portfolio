@@ -1,23 +1,24 @@
 import React, { useState } from 'react';
-import { MdQrCode2, MdPersonOutline, MdCode, MdChatBubbleOutline, MdEditNote, MdMailOutline } from 'react-icons/md';
+import { MdQrCode2, MdPersonOutline, MdCode, MdChatBubbleOutline, MdEditNote, MdMailOutline, MdHome } from 'react-icons/md';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaCoffee } from 'react-icons/fa';
+import { FaCoffee, FaSchool } from 'react-icons/fa';
 
 const Sidebar = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
     const menuItems = [
-        { icon: MdQrCode2, active: true, href: '#home', label: 'Home' },
+        { icon: MdHome, active: true, href: '#home', label: 'Home' },
         { icon: MdPersonOutline, href: '#about', label: 'About Me' },
         { icon: MdCode, href: '#skills', label: 'My Skills' },
         { icon: MdChatBubbleOutline, href: '#works', label: 'My Works' },
         { icon: MdMailOutline, href: '#contact', label: 'Contact Me' },
         { icon: FaCoffee, href: '#sponsor', label: 'Support Me' },
+        { icon: FaSchool, href: '#education', label: 'Education' },
     ];
 
     return (
         <aside className="flex flex-col items-center justify-start py-8 px-4 border-r border-gray-200 dark:border-gray-700 h-screen sticky top-0 bg-background-light dark:bg-background-dark z-50">
-            <nav className="flex flex-col items-center space-y-6">
+            <nav className="flex flex-col items-center">
                 {menuItems.map((item, index) => (
                     <div
                         key={index}
