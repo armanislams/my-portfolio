@@ -9,7 +9,8 @@ const Header = () => {
         <div className="text-xl font-bold text-gray-900 dark:text-white">
           <button>
             <a href="/">
-              <span className="text-primary">&lt;/&gt;</span> Arman
+              <span className="text-primary">&lt;&gt;</span> Arman
+              <span className="text-primary">&lt;/&gt;</span>
             </a>
           </button>
         </div>
